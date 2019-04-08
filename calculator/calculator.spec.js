@@ -44,6 +44,10 @@ describe('math.js', () => {
 //     expect(sum).toEqual(expected);
 // });
 
+it('should add 2 numbers correctly', () => {
+    expect(add(2, 2)).toBe(4);
+});
+
 function honest() {
     return true;
 }
