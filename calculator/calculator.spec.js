@@ -7,6 +7,7 @@ describe('math.js', () => {
             expect(add(2, 2)).toBe(4); 
             expect(add(1, 3)).toBe(4); 
             expect(add(-1, 3)).toBe(2); 
+            expect(add(0, 0)).toBe(0);
         });
 
         it('add() should return null when arguments are not numbers', () => {
@@ -47,6 +48,12 @@ describe('math.js', () => {
 it('should add 2 numbers correctly', () => {
     expect(add(2, 2)).toBe(4);
 });
+
+// create some todos for yourself to show up in the console
+// to help remember what other tests you'd like to try
+it.todo('pass in a string');
+it.todo('pass in null');
+it.todo('pass in an array');
 
 function honest() {
     return true;
