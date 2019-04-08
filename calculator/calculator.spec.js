@@ -39,6 +39,12 @@ it('should calculate the sum of any number of arguments separated by a comma', (
     expect(add(1, 2, 3, 4)).toBe(10);
 });
 
+// should handle an array of numbers
+it('should handle an array of numbers', () => {
+    expect(add([1, 2, 3])).toBe(6);
+    expect(add([1, 2, 3, 4])).toBe(10);
+});
+
 // create some todos for yourself to show up in the console
 // to help remember what other tests you'd like to try
 it.todo('pass in a string');

@@ -3,7 +3,8 @@ module.exports = {
 };
 
 function add(args) {
-  const numbers = Array.from(arguments);
+
+  const numbers = Array.isArray(args) ? args : Array.from(arguments);
 
   return numbers.reduce((sum, number) => {
     return sum + number;
