@@ -21,3 +21,33 @@ describe('math.js', () => {
         // });
     });
 });
+
+
+//--------------Guided Lecture Notes----------------
+
+// can add 2 and 2
+// const sum = add(2, 2);
+
+// console.log('The sum is: ', sum);
+
+// // test case
+// test('adds 2 and 2', function() {
+//     // Arrange
+//     const expected = 4;
+//     const value1 = 2;
+//     const value2 = 2;
+
+//     // Act
+//     const sum = add(value1, value2);
+
+//     // Assert
+//     expect(sum).toEqual(expected);
+// });
+
+function honest() {
+    return true;
+}
+
+test('an honest function should always tell the truth', () => {
+    expect(honest()).toBeTruthy();
+});
