@@ -9,16 +9,16 @@ describe('math.js', () => {
             expect(add(-1, 3)).toBe(2); 
         });
 
-        // it('add() should return null when arguments are not numbers', () => {
-        //     // expect(add()).toBeNull();
-        //     // expect(add(1)).toBeNull();
-        //     // expect(add(null, 1)).toBeNull();
-        //     // expect(add(undefined, 1)).toBeNull();
-        //     // expect(add(3, '4')).toBeNull();
-        //     // expect(add({}, '4')).toBeNull();
-        //     // expect(add([], '4')).toBeNull();
-        //     // expect(add(NaN, '4')).toBeNull();
-        // });
+        it('add() should return null when arguments are not numbers', () => {
+            expect(add()).toBeNull();
+            expect(add(1)).toBeNull();
+            expect(add(null, 1)).toBeNull();
+            expect(add(undefined, 1)).toBeNull();
+            expect(add(3, '4')).toBeNull();
+            expect(add({}, '4')).toBeNull();
+            expect(add([], '4')).toBeNull();
+            expect(add(NaN, '4')).toBeNull();
+        });
     });
 });
 
